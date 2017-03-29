@@ -1,0 +1,303 @@
+img{
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+[v-cloak]{display: none;}
+.container{
+	width: 1000px;
+	min-height: 700px;
+	margin: 0px auto;
+	padding: 30px  0;
+	position: relative;
+}
+.grid{
+	float: left;
+	width: 350px;
+	height: 667px;
+	border: 1px solid gray;
+	margin: 10px 30px;
+	overflow: auto;
+	background: url(http://7xv1io.com1.z0.glb.clouddn.com/product/image/pro_index_bg_v6.jpg);
+}
+.type_list{
+	float: left;
+	width: 90px;
+}
+.type {
+	width: 80px;
+	margin: 10px 0;
+}
+.type:hover{
+	border: 1px solid red;
+	cursor: pointer;
+}
+.type-row,.row{
+	overflow: auto;
+}
+.type-row{
+	height: 40px;
+}
+.type-col-1,.type-col-2,.col-1,.col-2{
+	float: left;
+	height: 100%;
+	min-height: 40px;
+	box-sizing: border-box;
+	border: 1px dotted gray;
+	cursor: pointer;
+}
+.ex_type{
+	border: 1px dotted gray;
+	cursor: pointer;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.type-col-1,.col-1{
+	width: 50%;
+}
+.type-col-2,.col-2{
+	width: 100%;
+}
+.drag:hover .del,.edit_height:hover .edit{
+	display: block;
+}
+.drag{
+	position: relative;
+}
+.edit{
+	padding: 5px 10px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	margin: 0 30px;
+	position: absolute;
+	cursor: pointer;
+	right: 10px;
+	bottom: 0px;
+	display: none;
+}
+.del{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+	display: none;
+}
+.edit:active{
+	border-color: red;
+	color: white;
+	background-color: red;
+}
+.edit-container{
+	position: absolute;
+	left: 510px;
+	padding-top: 10px;
+	width: 450px;
+}
+.edit_height{
+	min-height: 80px !important;
+	position: relative;
+}
+.pro_row{overflow: auto;}
+.pro_relative{position: relative;}
+.pro_relative .text{
+	position: absolute;
+	bottom: 9px;
+	width: 30%;
+	height: auto;
+	left: 35%;
+}
+.pro_title{margin: 25px 10px 5px 10px;}
+.pro_col1,.pro_col2,.pro_col4{float: left;box-sizing: border-box;/*border: 1px dotted gray;*/}
+.pro_col2{width: 100%;}
+.pro_col1{width: 50%;}
+.pro_col4{width: 25%;}
+.pro_col1:hover,.pro_col2:hover,.pro_relative:hover,.pro_col4:hover,.picker_img_item:hover{
+	border: 1px solid red;
+	cursor: pointer;
+}
+.cross{
+	padding:5px 0;
+	height: 60px;
+	line-height: 10px;
+}
+.cross img{
+	height: 100% !important;
+}
+.pro-search{
+	border: 1px solid #9F9F9D;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 45px;
+	padding-right: 60px;
+	border-radius: 5px;
+	color: #C0B8AB;
+	margin: 20px 15px;
+	box-shadow: #9F9F9D 1px 2px 3px;
+	-webkit-box-shadow: #9F9F9D 1px 2px 3px;
+	-moz-box-shadow: #9F9F9D 1px 2px 3px;
+	background: url('http://7xv1io.com1.z0.glb.clouddn.com/product/image/pro_index_search.png') no-repeat 10px center/auto 25px;
+	position: relative;
+}
+.pro-search input{
+	height: 100%;
+	box-sizing: border-box;
+	padding: 5px 0;
+	width: 100%;
+	border: none;
+	background-color: inherit;
+	color: inherit;
+	outline: none;
+}
+.pro-search span{
+	position: absolute;
+	background: url('http://7xv1io.com1.z0.glb.clouddn.com/product/image/pro_index_search1.png') no-repeat 10px center/auto 25px;
+	width: 60px;height: 100%;
+	top: 0;right: 0;
+}
+.pro-icons{
+	overflow: auto;
+	padding: 30px 10px 20px 10px;
+}
+.pro-icons span{
+	float: left;
+	width: 20%;
+	text-align: center;
+	padding-top: 60px;
+	font-size: 14px;
+	color: green;
+	font-weight: bold;
+}
+.icon1{/*pro_icon_cj3.png*/
+	background: url('http://7xv1io.com1.z0.glb.clouddn.com/product/image/pro-icon1.png')  no-repeat top center /55px auto;
+}
+.icon2{
+	background: url('http://7xv1io.com1.z0.glb.clouddn.com/product/image/pro-icon2.png')  no-repeat top center /55px auto;
+}
+.icon3{
+	background: url('http://7xv1io.com1.z0.glb.clouddn.com/product/image/pro-icon3.png')  no-repeat top center /55px auto;
+}
+.icon4{
+	background: url('http://7xv1io.com1.z0.glb.clouddn.com/product/image/pro-icon4.png')  no-repeat top center /55px auto;
+}
+.icon5{
+	background: url('http://7xv1io.com1.z0.glb.clouddn.com/product/image/pro-icon5.png')  no-repeat top center /55px auto;
+}
+
+.edit_title{
+	padding: 10px;
+	text-align: center;
+	background-color: #F0BB50;
+	color: white;
+	border-radius: 5px 5px 0 0;
+}
+.edit_parent,.edit_item{
+	border: 1px solid #F0BB50;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 100%;
+	/*border: none;*/
+}
+.edit_style{
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+.edit_line{
+	padding: 10px 0;
+	display: table;
+	width: 100%;
+}
+.edit_label{
+	width: 100px;
+}
+.edit_value input{
+	width: 100%;
+}
+.img_container{
+	width: 200px;
+	height: 155px;
+	line-height: 150px;
+	text-align: center;
+	border: 1px solid gray;
+	cursor: pointer;
+}
+.img_container img{
+	width: auto !important;
+	height: auto !important;
+	max-height: 150px !important;
+	max-width: 200px !important;
+}
+.edit_btn{
+	text-align: right;
+	padding: 10px 0;
+	margin-top: 10px;
+}
+.edit_btn span{
+	border: 1px solid gray;
+	padding: 10px 30px;
+	border-radius: 5px;
+	transition: 0.1s;
+}
+.edit_btn span:active{
+	background-color: #F0BB50;
+	color: white;
+	border-color: #F0BB50;;
+}
+.mask_layer{
+	position: fixed;
+	z-index: 10;
+	top: 0;bottom: 0;
+	left: 0;right: 0;
+	background: rgba(0,0,0,0.6);
+}
+.picker_img{
+	position: absolute;
+	width: 1000px;
+	height: 700px;
+	background: white;
+	top: 50%;left: 50%;
+	margin: -350px 0 0 -500px;
+}
+.picker_img_buckets{
+	float: left;
+	border-right: 1px solid #F0BB50;
+	height: 100%;
+	width: 150px;
+	overflow: auto;
+}
+.picker_img_buckets>div{
+	padding: 10px 0;
+	text-align: center;
+	border-bottom:1px solid #F0BB50;
+}
+.picker_img_list{
+	height: 100%;
+	margin-left: 150px;
+    overflow: auto;
+    padding: 20px 0 0 20px;
+    box-sizing: border-box;
+}
+.picker_img_item{
+	float: left;
+	width: 120px;
+	height: 120px;
+	line-height: 110px;
+	border: 1px solid gray;
+	text-align: center;
+    margin: 0 10px 10px 0;
+}
+
+.picker_img_item img{
+	width: auto !important;
+	height: auto !important;
+	max-height: 120px !important;
+	max-width: 120px !important;
+}
