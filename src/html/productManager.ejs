@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<title>微商城首页编辑</title>
+</head>
+<body>
+	<div id="app" class="container" v-cloak>
+		<div class="type_list">
+			<%=require('./part_edit.html')%>
+		</div>
+		<div id="items" class="grid">
+			<%=require('./part_list.html')%>
+		</div>
+		<div v-show="showEdit" class="edit-container">
+			<div v-show="curIndex !== -1" class="row">
+				<div class="edit_title">父容器样式</div>
+				<div class="col-2 edit_parent">
+					<div>样式：<a target="_blank" href="http://www.css88.com/book/css/css3-quicksearch.htm">(查看样式指导)</a></div>
+					<textarea :placeholder="styleIntro" class="edit_style" v-model="pStyle"></textarea>
+					<div class="edit_btn"><span @click="confirmEdit('p')">确定</span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="edit_title">区块({{(curEditItem && curEditItem.id)+(curIndex !==-1?","+curIndex:'')}})样式</div>
+				<table class="edit_item">
+					<tr>
+						<td class="edit_label">图片：</td>
+						<td class="edit_value"><div @click="showImg=true" class="img_container"><img :src="cImg" alt="点击换图"/></div></td>
+					</tr>
+					<tr>
+						<td class="edit_label">链接：</td>
+						<td class="edit_value"><input type="text" v-model="cLink" /></td>
+					</tr>
+					<tr>
+						<td class="edit_label">选择优惠券：</td>
+						<td class="edit_value">
+							<select name="">
+								<option value="">选择优惠券</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">样式：<a target="_blank" href="http://www.css88.com/book/css/css3-quicksearch.htm">(查看样式指导)</a></td>
+					</tr>
+					<tr>
+						<td colspan="2"><textarea :placeholder="styleIntro" class="edit_style" v-model="cStyle"></textarea></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="edit_btn"><span @click="confirmEdit('c')">确定</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<%=require('./part_img.html')%>
+	</div>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script type="text/javascript" src="../js/plupload/plupload.full.min.js" ></script>
+	<script type="text/javascript" src="../js/plupload/zh_CN.js" ></script>
+	<script type="text/javascript" src="http://7xv1io.com1.z0.glb.clouddn.com/js/lib/qiniu.min.js" ></script>
+</body>
+</html>

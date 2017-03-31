@@ -1,0 +1,12 @@
+<div v-show="showImg" class="mask_layer">
+	<div class="picker_img">
+		<span style="display: block;" class="del" @click="showImg = false">x</span>
+		<div class="picker_img_buckets">
+			<div v-for="i in 10">38节活动图片</div>
+			<div>元宵节活动图片</div>
+		</div>
+		<div class="picker_img_list">
+			<div v-for="i in 100" class="picker_img_item"><img :src="cImg"></div>
+		</div>
+	</div>
+</div>

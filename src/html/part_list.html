@@ -1,0 +1,92 @@
+<div v-for="item in list">
+	<div v-if="item.type===0" class="pro_row drag" :style="item.styleObj">
+		<div class="pro_col2"><img @click="goPage(item)" :src="item.imgUrl"/></div>
+		<span class="del" @click="delType(item)">x</span>
+	</div>
+	<div v-if="item.type===1" class="pro_row drag" :style="item.styleObj">
+		<div class="pro_col1" :style="item.items[0].styleObj"><img @click="goPage(item,0)" :src="item.items[0].imgUrl"/></div>
+		<div class="pro_col1" :style="item.items[1].styleObj"><img @click="goPage(item,1)" :src="item.items[1].imgUrl"/></div>
+		<span class="del" @click="delType(item)">x</span>
+	</div>
+	<div v-if="item.type===2" class="drag" :style="item.styleObj">
+		<div class="pro_row">
+			<div class="pro_col2" :style="item.items[0].styleObj"><img @click="goPage(item,0)" :src="item.items[0].imgUrl"/></div>
+		</div>
+		<div class="pro_row">
+			<div class="pro_col1">
+				<div :style="item.items[1].styleObj"><img @click="goPage(item,1)" :src="item.items[1].imgUrl"/></div>
+			</div>
+			<div class="pro_col1">
+				<div :style="item.items[2].styleObj"><img @click="goPage(item,2)" :src="item.items[2].imgUrl"/></div>
+			</div>
+		</div>
+		<span class="del" @click="delType(item)">x</span>
+	</div>
+	<div v-if="item.type===3" class="drag" :style="item.styleObj">
+		<div class="pro_row">
+			<div class="pro_col1">
+				<div :style="item.items[0].styleObj"><img @click="goPage(item,0)" :src="item.items[0].imgUrl"/></div>
+			</div>
+			<div class="pro_col1">
+				<div :style="item.items[1].styleObj"><img @click="goPage(item,1)" :src="item.items[1].imgUrl"/></div>
+			</div>
+		</div>
+		<div class="pro_row">
+			<div class="pro_col1">
+				<div :style="item.items[2].styleObj"><img @click="goPage(item,2)" :src="item.items[2].imgUrl"/></div>
+			</div>
+			<div class="pro_col1">
+				<div :style="item.items[3].styleObj"><img @click="goPage(item,3)" :src="item.items[3].imgUrl"/></div>
+			</div>
+		</div>
+		<span class="del" @click="delType(item)">x</span>
+	</div>
+	<div v-if="item.type===4" class="pro_relative drag" :style="item.styleObj">
+		<div class="pro-search"><input type="text" placeholder="请输入产品名称" v-model="word"><span></span></div>
+		<!--<img :src="item.imgUrl"/>-->
+		<span class="del" @click="delType(item)">x</span>
+	</div>
+	<div v-if="item.type===5" class="pro_relative pro-icons drag" :style="item.styleObj">
+		<span class="icon1">查积分</span>
+		<span class="icon2">优惠券</span>
+		<span class="icon3">早餐打卡</span>
+		<span class="icon4">现金账户</span>
+		<span class="icon5">谷粉社区</span>
+		<div class="del" @click="delType(item)">x</div>
+	</div>
+	<div v-if="item.type===6" class="pro_relative drag" :style="item.styleObj">
+		<div class="pro_row">
+			<div class="pro_col1 cross" style="border:1px dotted white;border-width:0 1px 1px 0 ;">
+				<img @click="goPage(item,0)" :src="item.items[0].imgUrl"/>
+			</div>
+			<div class="pro_col1 cross"style="border-bottom:1px dotted white;">
+				<img @click="goPage(item,1)" :src="item.items[1].imgUrl"/>
+			</div>
+		</div>
+		<div class="pro_row">
+			<div class="pro_col1 cross"style="border-right:1px dotted white;">
+				<img @click="goPage(item,2)" :src="item.items[2].imgUrl"/>
+			</div>
+			<div class="pro_col1 cross">
+				<img @click="goPage(item,3)" :src="item.items[3].imgUrl"/>
+			</div>
+		</div>
+		<span class="del" @click="delType(item)">x</span>
+	</div>
+	<div v-if="item.type===7" class="pro_relative pro_title drag">
+		<img :src="item.imgUrl"/>
+		<img :src="item.text" class="text"/>
+		<span class="del" @click="delType(item)">x</span>
+	</div>
+	<div v-if="item.type===8" class="pro_row drag" :style="item.styleObj">
+		<div class="pro_col2"><img @click="goPage(item)" :src="item.imgUrl"/></div>
+		<span class="del" @click="delType(item)">x</span>
+	</div>
+	<div v-if="item.type===9" class="pro_row drag" :style="item.styleObj">
+		<div class="pro_col4" :style="item.items[0].styleObj"><img @click="goPage(item,0)" :src="item.items[0].imgUrl"/></div>
+		<div class="pro_col4" :style="item.items[1].styleObj"><img @click="goPage(item,1)" :src="item.items[1].imgUrl"/></div>
+		<div class="pro_col4" :style="item.items[2].styleObj"><img @click="goPage(item,2)" :src="item.items[2].imgUrl"/></div>
+		<div class="pro_col4" :style="item.items[3].styleObj"><img @click="goPage(item,3)" :src="item.items[3].imgUrl"/></div>
+		<span class="del" @click="delType(item)">x</span>
+	</div>
+</div>
