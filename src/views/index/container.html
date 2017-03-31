@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+	html,body{
+		height: 100%;
+	}
+	.border{
+		border: 1px solid red;
+		height: 150px;
+	}
+	.left{
+		width: 200px;
+		float: left;
+		height: 100%;
+		background: #03895A;
+		color: white;
+	}
+	.menu_item{
+		padding: 15px 0 15px 30px;
+		border-bottom: 1px solid white;
+	}
+	.container-fluid{
+		height: 100%;
+		padding: 0 !important;
+		margin: 0;
+	}
+	.right{
+		height: 100%;
+		padding-left: 200px;
+	}
+	.header{
+		height: 15%;
+		background: white;
+	}
+	.main_container{
+		padding: 20px 20px 0 20px;
+		height: 85%;
+		background: #F0F4F4;
+	}
+	.main{
+		height: 100%;
+		background: white;
+	}
+</style>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="left">
+			<div style="height: 80px;">
+				
+			</div>
+			<div class="menu_item">
+				店铺信息
+			</div>
+			<div class="menu_item">
+				标签词
+			</div>
+			<div class="menu_item">
+				特征词
+			</div>
+			<div class="menu_item">
+				图片详情
+			</div>
+			
+		</div>
+		<div class="right">
+			<div class="header">
+				
+			</div>
+			<div class="main_container">
+				<div class="main">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--
+	{{each list as v i}}
+	<div class="border">{{v}}</div>
+	{{/each}}
+	
+	{{each list as v i}}
+		{{include v}}
+	{{/each}}
+	-->
+	<script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+</body>
+</html>

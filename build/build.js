@@ -5,10 +5,10 @@ var html = require("html-webpack-plugin");
 var path = require("path");
 config.plugins = [
 	new html({
-		template:path.resolve(__dirname, "../src/html/productManager.ejs"),
+		template:path.resolve(__dirname, "../src/views/index/index.js"),
 		filename:"productManager.html",
 	}),
-	new ExtractTextPlugin("[name]-[hash].css")
+//	new ExtractTextPlugin("[name]-[hash].css")
 ]
 console.log(config.entry);
 webpack(config,function(err,stats){

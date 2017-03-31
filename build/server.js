@@ -19,7 +19,7 @@ webpackConfig.plugins = [
     new webpack.HotModuleReplacementPlugin(),
 //  new webpack.NoErrorsPlugin(),
 	new html({
-		template:path.resolve(__dirname, "../src/html/productManager.ejs"),
+		template:path.resolve(__dirname, "../src/views/index/index.js"),
 		filename:"productManager.html",
 	}),
 	new webpack.optimize.CommonsChunkPlugin({
